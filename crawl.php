@@ -61,7 +61,7 @@ div.copyright{
 // function to get webpage title
 ini_set('max_execution_time', 1000);
 $a=$_GET['a'];
-$z=$a+199;
+$z=$a+999;
 $b=array();
 function getWeb($b,$a,$z) {
     $hasil=array();
@@ -124,8 +124,8 @@ echo '  <tr>
 }
 echo '</table></div>';
 
-$prev=$a-200;
-$next=$a+200;
+$prev=$a-1000;
+$next=$a+1000;
 echo ' <div class="nav"><a href="crawl.php?a='.$prev.'" class="button">Sebelum</a>';
 echo ' <a href="index.php?" class="button">Home</a>';
 echo ' <a href="crawl.php?a='.$next.'" class="button">Sesudah</a></div>';
